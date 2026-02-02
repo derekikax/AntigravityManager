@@ -307,7 +307,8 @@ app
   })
   .then(() => {
     logger.info('Step: checkForUpdates');
-    checkForUpdates();
+    logger.info('Step: checkForUpdates (DISABLED BY USER)');
+    // checkForUpdates();
   })
   .then(async () => {
     // Initialize Cloud Monitor if enabled
